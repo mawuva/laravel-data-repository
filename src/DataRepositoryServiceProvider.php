@@ -52,7 +52,7 @@ class DataRepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'data-repository');
+        //$this->mergeConfigFrom(__DIR__.'/../config/config.php', 'data-repository');
 
         // Register the main class to use with the facade
         $this->app->singleton('data-repository', function () {
