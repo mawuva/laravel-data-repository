@@ -2,10 +2,10 @@
     "name": "mawuekom/laravel-data-repository",
     "description": "Repository Pattern implementation for Laravel and Easily build Eloquent queries from API requests",
     "keywords": [
-        "mawuekom",
-        "laravel-data-repository"
+        "mawuekom", "repository", "repository-pattern",
+        "laravel-data-repository", "laravel-repository-pattern"
     ],
-    "homepage": "https://github.com/mawuekom/laravel-data-repository",
+    "homepage": "https://packagist.org/packages/mawuekom/laravel-data-repository",
     "license": "MIT",
     "type": "library",
     "authors": [
