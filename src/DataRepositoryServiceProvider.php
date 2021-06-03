@@ -20,9 +20,11 @@ class DataRepositoryServiceProvider extends ServiceProvider
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
-            /*$this->publishes([
-                __DIR__.'/../config/config.php' => config_path('data-repository.php'),
-            ], 'config');*/
+            $this->publishes([
+                //__DIR__.'/../config/config.php' => config_path('data-repository.php'),
+                base_path('vendor/spatie/laravel-query-builder/config/query-builder.php') =>config_path('query-builder.php'),
+                base_path('vendor/spatie/laravel-json-api-paginate/config/json-api-paginate.php') =>config_path('json-api-paginate.php'),
+            ], 'config');
 
             // Publishing the views.
             /*$this->publishes([
@@ -56,5 +58,9 @@ class DataRepositoryServiceProvider extends ServiceProvider
         $this->app->singleton('data-repository', function () {
             return new DataRepository;
         });
+
+        $this ->app ->register('Mawuekom\MacroSearch\MacroSearchServiceProvider');
+        $this ->app ->register('Spatie\QueryBuilder\QueryBuilderServiceProvider');
+        $this ->app ->register('Spatie\JsonApiPaginate\JsonApiPaginateServiceProvider');
     }
 }
