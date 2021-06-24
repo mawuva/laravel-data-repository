@@ -4,6 +4,7 @@ namespace Mawuekom\DataRepository\Repositories;
 
 use Mawuekom\DataRepository\Repositories\BaseRepository;
 use Mawuekom\DataRepository\Repositories\Contracts\BaseApiRepositoryContract;
+use Mawuekom\DataRepository\Repositories\Traits\BaseRepositoryTrait;
 
 /**
  * Base API repository contract
@@ -14,6 +15,8 @@ use Mawuekom\DataRepository\Repositories\Contracts\BaseApiRepositoryContract;
  */
 abstract class BaseApiRepository extends BaseRepository implements BaseApiRepositoryContract
 {
+    use BaseRepositoryTrait;
+    
     /**
      * Columns on which filterig will be done
      * 
