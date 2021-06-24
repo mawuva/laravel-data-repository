@@ -5,7 +5,7 @@
         "mawuekom", "repository", "repository-pattern",
         "laravel-data-repository", "laravel-repository-pattern"
     ],
-    "homepage": "https://packagist.org/packages/mawuekom/laravel-data-repository",
+    "homepage": "https://packagist.org/packages/mawuva/laravel-data-repository",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -21,7 +21,7 @@
         "php": "^7.4|^8.0",
         "illuminate/support": "^8.0",
         "illuminate/database": "^8.0",
-        "mawuekom/laravel-macro-search": "dev-main",
+        "mawuekom/laravel-macro-search": "^1.0",
         "spatie/laravel-json-api-paginate": "^1.10",
         "spatie/laravel-query-builder": "^3.3"
     },
